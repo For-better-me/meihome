@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
-<html lang="zh" xml:lang="zh">
+<html lang="zh" xml:lang="zh"
+    class="zh-CN js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths chrome"
+    lang="zh-CN">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
@@ -12,13 +15,56 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>美德美家</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
-    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 </head>
+
 <body>
     <div class="page2">
+        <header class="trans">
+            <a href="javascript:;" class="top_logo trans">
+                <div class="logo_img">
+                    <img class="trans" src="http://modesign.cc/wordpress/wp-content/themes/modesign/images/logo.png"
+                        alt="logo" />
+                </div>
+            </a>
+            <nav>
+                <button class="menu_btn trans">MENU<span></span></button>
+
+                <ul id="nav">
+                    <li class="trans experience">
+                        <a href="javascript:;" class="trans">
+                            <span class="cn">美德美家</span>
+                        </a>
+                    </li>
+                    <li class="trans experience">
+                        <a href="javascript:;" class="trans">
+                            <span class="cn">美德美家</span>
+                        </a>
+                    </li>
+                    <li class="trans experience">
+                        <a href="javascript:;" class="trans">
+                            <span class="cn">美德美家</span>
+                        </a>
+                    </li>
+                    <li class="trans experience">
+                        <a href="javascript:;" class="trans">
+                            <span class="cn">新闻</span>
+                        </a>
+                    </li>
+                    <li class="trans experience">
+                        <a href="javascript:;" class="trans">
+                            <span class="cn">联系我们</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </header>
         <div class="banner">
-            <img src="" alt="">
+            <img src="img/banner.png" alt="">
         </div>
         <div class="serve">
             <ul>
@@ -36,7 +82,7 @@
                 <li>
                     <a href="javascript:;">
                         <div class="pic">
-                            <img src="img/1.png" alt="">
+                            <img src="img/2.png" alt="">
                         </div>
                         <div class="text">
                             <h4>安装服务</h4>
@@ -47,7 +93,7 @@
                 <li>
                     <a href="javascript:;">
                         <div class="pic">
-                            <img src="img/1.png" alt="">
+                            <img src="img/3.png" alt="">
                         </div>
                         <div class="text">
                             <h4>安装服务</h4>
@@ -57,8 +103,24 @@
                 </li>
             </ul>
         </div>
+        <div class="foot">
+            <p>美德美家美德美家美德美家美德美家美德美家美德美家</p>
+        </div>
     </div>
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+        $(function () {
+            setLiHeight();
+            function setLiHeight() {
+                var li_width = $('.serve li').width();
+                $('.serve li').height(li_width)
+            }
+            window.onresize = function () {
+                setLiHeight();
+            }
+
+        })
+    </script>
 </body>
+
 </html>
